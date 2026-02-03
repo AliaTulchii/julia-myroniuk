@@ -1,0 +1,39 @@
+.practices-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+}
+
+.practices-tabs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.practices-tabs__tab {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-canela);
+  font-size: 32px;
+  color: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+
+  &.active {
+    color: #fff;
+    font-style: italic;
+  }
+
+  .index {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+}
+
+.practices-tabs__content img {
+  max-width: 220px;
+  margin-bottom: 32px;
+}

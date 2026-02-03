@@ -4,6 +4,7 @@ import { useActiveSection } from "../../hooks/useActiveSection";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { useEffect, useState } from "react";
+import MenuIcon from "../../icons/MenuIcon";
 
 const linkVariants: Variants = {
   expanded: {
@@ -95,7 +96,8 @@ const Nav = () => {
         animate={collapsed && !hoverMenu ? "visible" : "hidden"}
         onMouseEnter={() => setHoverMenu(true)}
       >
-        Menu
+        <MenuIcon/>
+        <p>Menu</p>
       </motion.div>
     </nav>
   );
@@ -103,24 +105,3 @@ const Nav = () => {
 
 export default Nav;
 
-// import './nav.scss'
-// import { SECTIONS } from "./Nav.Constants";
-// import { useActiveSection } from '../../hooks/useActiveSection';
-
-// const Nav = () => {
-//   const activeId = useActiveSection(SECTIONS.map((s) => s.id));
-//   return (
-//     <nav className="nav">
-//       {SECTIONS.map(({id, label})=>(
-//         <a
-//           key={id}
-//           href={`#${id}`}
-//           className={`nav__link ${activeId === id ? "active" : ""}`}
-//         >{label}</a>
-//       ))}
-
-//     </nav>
-//   );
-// }
-
-// export default Nav
