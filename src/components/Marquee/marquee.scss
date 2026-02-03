@@ -1,0 +1,23 @@
+.marquee-wrapper {
+    height: 135px;  
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  
+  .marquee-item {
+    // height: 131px;
+  //  padding: 51.5px 16px;
+  margin-right: 32px;
+    // display: flex;
+  // align-items: center;
+  // justify-content: center;
+    // object-fit: contain;
+
+    @media screen and (max-width: 968px){
+      height: 80px;
+      padding: 30px 16px;
+    }
+  }
+  

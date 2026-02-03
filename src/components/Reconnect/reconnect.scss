@@ -1,0 +1,27 @@
+.reconnect {
+  width: 100vw;
+  // height: 125px;
+  overflow-x: hidden;
+}
+
+.reconnect__text {
+  font-family: var(--font-canela);
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: var(--title-marquee);
+}
+
+.reconnect__text-italic {
+  font-style: italic;
+}
+
+.reconnect__circle{
+    width: 24px;
+    height: 24px;
+    margin-top: 32px;
+    border-radius: 50%;
+    background-color: var(--title-marquee);
+}
+

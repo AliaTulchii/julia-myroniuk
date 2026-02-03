@@ -1,0 +1,1 @@
+export const PRACTICES_TITLE = "(practices and ceremonies)";

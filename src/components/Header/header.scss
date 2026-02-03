@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  backdrop-filter: none;
+ background: rgba(255, 255, 255, 0); // обовʼязково напівпрозорий
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(12px); // Safari
+  
+
+
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+
+  &.scrolled {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(48, 71, 120, 0.4); 
+  }
+}
+
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}

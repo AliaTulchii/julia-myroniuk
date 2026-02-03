@@ -1,0 +1,11 @@
+.container {
+  max-width: calc(var(--container-width) - 80px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 968px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+}

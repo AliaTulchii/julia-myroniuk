@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+  background-color: var(--white);
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  text-wrap: balance;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--accent);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  touch-action: none;
+}
+
+
+.app{
+  position: relative;
+}

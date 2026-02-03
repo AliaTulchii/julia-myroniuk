@@ -1,0 +1,1 @@
+export const BOOKING_BTN_TEXT = "Book a session";
