@@ -1,3 +1,4 @@
+
 .practices-tabs {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -10,8 +11,11 @@
 }
 
 .practices-tabs__tab {
+    position: relative;
+    overflow: visible;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: end;
   gap: 24px;
   padding: 24px 0;
   background: none;
@@ -19,21 +23,142 @@
   cursor: pointer;
   font-family: var(--font-canela);
   font-size: 32px;
-  color: rgba(255,255,255,0.6);
+//   color: rgba(255,255,255,0.6);
   border-bottom: 1px solid rgba(255,255,255,0.2);
 
-  &.active {
-    color: #fff;
-    font-style: italic;
+  &:hover{
+    // align-items: center;
+
+  .practices-tabs__label{
+    font-family: var(--font-canela);
+font-weight: 400;
+font-size: 40px;
+// font-style: normal;
+transform: skewX(15deg);
+line-height: 110%;
+letter-spacing: 0em;
+color: var(--background-for-whom);
+transition: all 0.3s ease-in-out;
   }
 
-  .index {
-    font-size: 12px;
-    opacity: 0.6;
+  .practices-tabs__index {
+    display: none;
+  }
+
+  .practices-tabs__circle{
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-top: 18px;
+    border-radius: 50%;
+    background-color: var(--background-for-whom);
+  }
+  }
+
+  &.active{
+// align-items: center;
+
+  .practices-tabs__label{
+    font-family: var(--font-canela);
+font-weight: 400;
+font-size: 40px;
+// font-style: normal;
+transform: skewX(15deg);
+line-height: 110%;
+letter-spacing: 0em;
+color: var(--tabs-label-active);
+transition: all 0.3s ease-in-out;
+  }
+
+  .practices-tabs__index {
+    display: none;
+  }
+
+  .practices-tabs__circle{
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-top: 18px;
+    border-radius: 50%;
+    background-color: var(--background-for-whom);
   }
 }
-
-.practices-tabs__content img {
-  max-width: 220px;
-  margin-bottom: 32px;
 }
+
+.practices-tabs__cursor{
+    position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.practices-tabs__label{
+    font-family: var(--font-canela);
+    // font-style: italic;
+     font-style: italic;
+  transform: skewX(-6deg);
+  transition: transform 0.3s ease;
+font-weight: 400;
+font-size: 40px;
+line-height: 110%;
+letter-spacing: 0em;
+color: var(--tabs-label);
+transition: all 0.3s ease-in-out;
+  }
+
+  .practices-tabs__index {
+    display: block;
+    font-family: var(--font-aeonik);
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--title-practices);
+  }
+
+  .practices-tabs__circle{
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--title-practices);
+  }
+
+
+
+  //right part
+
+  .practices-tabs__content-title{
+    margin-bottom: 40px;
+    font-family: var(--font-aeonik);
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+letter-spacing: 0em;
+white-space: pre-line;
+color: var(--tabs-label-active);
+  }
+
+  .practices-tabs__content-list{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .practices-tabs__content-item{
+    font-family: var(--font-aeonik);
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+letter-spacing: 0em;
+color: var(--tabs-label-active);
+  }
+
+  
+  .practices-tabs__btn{
+    background-color: var(--tabs-label-active);
+    color: var(--subtitle-for-whom);
+  }

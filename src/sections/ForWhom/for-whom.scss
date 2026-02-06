@@ -11,15 +11,18 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    // background-color: red;
 }
 
 .for-whom__title{
+    margin-bottom: 2px;
     font-family: var(--font-aeonik);
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0.04em;
     color: var(--title-for-whom);
+    // background-color: yellow;
 }
 
 .for-whom__subtitle{
@@ -30,6 +33,7 @@ font-size: 48px;
 line-height: 100%;
 letter-spacing: 0em;
 color: var(--subtitle-for-whom);
+// background-color: white;
 }
 
 .for-whom__texts-wrapper{
